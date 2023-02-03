@@ -10,12 +10,7 @@ function animateTheLivingHellOutOfIt() {
 
     .staggerFrom(".tree", 2, { y: -1000, scale: 0.8, rotation: 360 }, 0.1)
     .staggerFrom(".house:nth-child(odd)", 3, { x: 2000 }, 0.1)
-    .staggerFrom(
-      ".house:nth-child(even)",
-      2,
-      { y: -1000, opacity: 0.6, ease: Power3.easeInOut },
-      0.3
-    )
+    .staggerFrom(".house:nth-child(even)", 2, { y: -1000, opacity: 0.6, ease: Power3.easeInOut }, 0.3)
     .staggerTo(".tree path, .house path", 10, {
       y: () => Math.random() * 1000 - 500,
       x: () => Math.random() * 1000 - 500,
